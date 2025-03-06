@@ -1,0 +1,13 @@
+[package]
+name = "gmsv_exporter"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+gmod = "17.0.0"
+lazy_static = "1.4.0"
+prometheus = "0.13.4"
+prometheus_exporter = { git = "https://github.com/AlexanderThaller/prometheus_exporter.git", default-features = false }
